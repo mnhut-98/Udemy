@@ -1,0 +1,36 @@
+.courses{
+    padding: $pd-20 + 5 0;
+    .courses__left{
+        padding: $pd-20 + 10;
+        background-color: rgba(20, 23, 28, 0.05);
+        h2{
+            @include styleText($color-black-3,$fs-20 - 1,normal);
+        }
+
+    }
+    .courses__right{
+        .nav{
+            border-bottom: 1px solid $color-white-0;
+            .nav-item{      
+                .nav-link{
+                   padding: 0;;
+                    span{
+                        padding: 8px 16px;
+                    }
+                   text-transform: capitalize;
+                   @include styleText($color-black-3,$fs-15,normal);
+                    &.active{
+                        background-color: transparent;
+                        &::after{
+                            content: '';
+                            display: block;
+                            border-bottom: 5px solid $color-blue-0;
+                            padding-top: 15px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

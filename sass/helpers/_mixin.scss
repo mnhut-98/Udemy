@@ -1,0 +1,27 @@
+
+
+@mixin styleButton($colorBorder,$color,$fs,$fw,$pdx, $pdy, $background) {
+    border: 1px solid $colorBorder;
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+    padding:$pdx $pdy;
+    background-color: $background;
+    transition: all .5s;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+@mixin styleButtonHover($background, $color,$borderColor) {
+    background-color:$background;
+    color: $color;
+    border-color: $borderColor;
+}
+@mixin  styleText($color,$fs,$fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+   
+}
+@mixin styleFormSearch() {
+    
+}

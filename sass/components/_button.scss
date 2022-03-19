@@ -1,0 +1,17 @@
+.button--orange{
+    @include styleButton($color-primary,$color-white,$fs-15,$fw-700,$pd-11,$pd-11 + 1,$color-primary);
+    
+    
+    &:hover{
+        @include styleButtonHover($color-red-0,$color-white,$color-red-0);
+    }
+   
+}
+.button--white{
+    @include styleButton($color-black-1,$color-black-2,$fs-15,$fw-700,$pd-11,$pd-11 + 1,$color-white);
+    &:hover{
+        @include styleButtonHover($color-white,$color-black-3,$color-black-3);
+    }
+    
+}
+

@@ -1,0 +1,28 @@
+.intro{
+    background: linear-gradient(-45deg, #ec5252, #6e1a52);
+    padding: 20px;
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            font-size: $fs-50;
+            color: $color-white;
+           
+        }
+        .intro__content{
+            padding-left: $pd-20;
+            .intro__title{
+                margin-bottom: 0;
+                @include styleText($color-white,$fs-15 + 2,$fw-700);
+            }
+            .intro__desc{
+                margin-bottom: 0;
+                @include styleText($color-white,$fs-15,normal);
+
+            }
+        }
+    }
+
+    
+}

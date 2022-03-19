@@ -1,0 +1,22 @@
+.banner{
+
+    
+    background-image:linear-gradient(to right,#6e1a52, #76c5d6 41%), url(../img/udemy-logo-semi-transparent.svg) ;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-blend-mode: overlay;
+    padding: $pd-30;
+    h2{
+        @include styleText($color-white,$fs-36,normal);
+    }
+    p{
+        margin-bottom: 0;
+        @include styleText($color-white,$fs-15,normal);
+
+    }
+    a{
+        display: inline-block;
+        
+    }
+}
+// url(../img/udemy-logo-semi-transparent.svg)

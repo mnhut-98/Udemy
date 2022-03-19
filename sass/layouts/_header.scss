@@ -1,0 +1,100 @@
+
+.navbar{
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    .header__search{
+        @extend .input-group;
+    }
+    .header__categories{
+        cursor: pointer;
+        p{
+            @include styleText($color-black-1,$fs-13,$fw-600);
+        }
+        i{
+            color: $color-black-0;
+            
+            
+        }
+    }
+    .navbar-nav{
+        .nav-item{
+           position: relative;
+           &:hover{
+               .nav-link{
+                    background-color: $color-grey-3;
+
+               }
+               .overlay{
+                   display: block;
+               }
+           }
+            .nav-link{
+                color: $color-black-1;
+                padding: $pd-11;
+                
+               
+            }
+            .overlay{
+                width: 300px;
+                background-color: $color-white;
+                padding: $pd-20;
+                position: absolute;
+                right: 0;
+                text-align: center;
+                top: 137%;
+                z-index: 10;
+                display: none;
+                transition: all .5s;
+                box-shadow: 0 4px 16px rgba(20, 23, 28,0.25);
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 100px;
+                    height: 100px;
+                    right: 0;
+                    top: -40%;
+                    border-top:50px solid transparent;
+                    border-left:50px solid transparent;
+                    border-right:50px solid transparent;
+                    border-bottom:50px solid white;
+                    position: absolute;
+                   
+                }
+                p{
+                    position: relative;
+                    z-index: 10;
+                    margin-bottom: 10px;
+                }
+               
+            }
+            .header__cart{
+                padding: 12px;
+                border-radius: 50%;
+                transition: all .5s;
+                i{
+                    font-size: $fs-20;
+                    color:$color-black-1 ;
+                }
+                &:hover{
+                    
+                    background-color: rgba(0,0,0,.1);
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1335px) {
+      
+            .navbar-nav {
+                .nav-item{
+                    .nav-link{
+                     font-size: 1.1vw;
+                       
+                    }
+                }
+            }
+
+        }
+       
+       
+    
+}

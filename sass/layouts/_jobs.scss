@@ -1,0 +1,28 @@
+.jobs{
+    padding: $pd-30 0;
+    background-color: $color-white-1;
+    .jobs--border{
+        border-right: 1px solid $color-black-0;
+    }
+    .jobs__item{
+        text-align: center;
+        max-width: 400px;
+        margin: auto;
+      
+        h2{
+            @include styleText($color-black-1,$fs-20 - 1 , $fw-600);
+        }
+        .jobs__content{
+            margin-top: 20px;
+         
+        }
+        a{
+            display: inline-block;
+        }
+    }
+    @media screen and (max-width:992px) {
+        .jobs--border{
+            border-right: 1px solid transparent;
+        }
+    }
+}

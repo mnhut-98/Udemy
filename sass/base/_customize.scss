@@ -1,0 +1,11 @@
+.swiper{
+    .swiper-button-prev{
+       @extend .swiper-button;
+        left: -2%;
+      
+    }
+    .swiper-button-next{
+       @extend .swiper-button;
+        right: -2%;
+    }
+}

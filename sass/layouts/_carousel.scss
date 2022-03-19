@@ -1,0 +1,26 @@
+.carousel{
+    background-image: url(../img/cover.jpg);
+    @extend %background;
+    height: 500px;
+    position: relative;
+  
+    .carosuel__caption{
+        position: absolute;
+        top: 50%;
+        
+        max-width: 500px;
+        transform: translateY(-50%);
+        h1{
+            @include styleText($color-white,$fs-40,$fw-700);
+        }
+        p{
+            @include styleText($color-white,$fs-15 + 3,normal);
+        }
+    }
+@media screen and (max-width:576px) {
+    .carosuel__caption{
+        padding-right: 15px;
+    }
+}
+
+}
